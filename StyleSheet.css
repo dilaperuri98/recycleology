@@ -1,0 +1,21 @@
+body{
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+
+.bg-welcome{
+    background-image: url("homepage.png");
+}
+
+.bg-signin,.bg-signup,.bg-menu{
+    background-image: url("signin_page.svg");
+}
+
+.bg-language{
+    background-image: url("language.png");
+}
+
+
+
+

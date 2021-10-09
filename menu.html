@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="StyleSheet.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="menu_script.js"></script>
+</head>
+
+<style>
+.grid-container {
+  display: grid;
+  /* grid-template-columns: auto auto auto; */
+  justify-content: space-between;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  font-size: 50px;
+  text-align: center;
+}
+.content {
+  background-color: #4CAF50;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.button {
+background-color: #4CAF50;
+border: none;
+color: white;
+text-align: center;
+display:inline-block;
+font-size: 16px;
+cursor: pointer;
+padding: 14px 40px;
+width: 150px;
+}
+.button2 {background-color: #008CBA;}
+.button3 {background-color: #f44336;} 
+.button4 {background-color: #b666ab;}  
+.button5 {background-color: #555555;} 
+
+.circle{
+    align-items: center;
+    position:absolute;
+    top:37%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.circle-btm{
+    top:65%;
+}
+</style>
+
+<body class="bg-menu">
+    <nav>
+        <div class="grid-container">
+            <div class="content" id="content">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="menu" id="menu">
+            
+                <ul><button class="button">Profile</button></ul>
+                <ul><button class="button button2">Setting</button></ul>
+                <ul><button class="button button3">My Reward</button></ul>
+                <ul><button class="button button4">My Voucher</button></ul>
+                <ul><button class="button button5">Sign Out</button></ul>
+        </div>
+    </nav>
+    <div class="circle">
+        <input type="image" src="button/topic_btn.png" alt="Submit" width="150px" height="175px" >
+        <input type="image" src="button/quiz_btn.png" alt="Submit" width="150px" height="175px" >
+    </div>
+    <div class="circle circle-btm">
+        <input type="image" src="button/game_btn.png" alt="Submit" width="150px" height="175px" >
+        <input type="image" src="button/craft_btn.png" alt="Submit" width="150px" height="175px" >
+    </div>
+   
+</body>
+</html>
